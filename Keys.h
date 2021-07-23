@@ -1,17 +1,16 @@
-#include <iostream>
 #include <Windows.h>
 
 class Macros {
 public:
     Macros() {
-        loopCount = 0;
-        kArr = nullptr;
-        arrSize = 0;
+        this->loopCount = 0;
+        this->kArr = nullptr;
+        this->arrSize = 0;
     }
 
     Macros(int loopCount) {
-        kArr = nullptr;
-        arrSize = 0;
+        this->kArr = nullptr;
+        this->arrSize = 0;
         this->loopCount = loopCount;
     }
 
@@ -40,10 +39,10 @@ private:
             this->scanCode = scanCode;
         }
 
-        WCHAR key;
-        int kTime;
-        int kDelay;
-        int scanCode;
+        WCHAR key; // UNICODE key
+        int kTime; // Key's pushing time for ScanCode
+        int kDelay; // Key's pushing delay
+        int scanCode; // ScanCode ID https://ru.wikipedia.org/wiki/Скан-код
     };
 
     Keys* kArr;
