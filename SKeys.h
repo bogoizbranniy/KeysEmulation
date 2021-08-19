@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _SKEYS_H_
 #define _SKEYS_H_
+
 #include <Windows.h>
 
 class Macros {
